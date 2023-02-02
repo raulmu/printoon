@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'printoon';
+  addToHomeScreen() {
+    console.log('addToHomeScreen');
+  }
 }
