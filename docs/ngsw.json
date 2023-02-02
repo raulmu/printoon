@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1675307049695,
+  "timestamp": 1675307424907,
   "index": "/printoon/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/printoon/favicon.ico",
         "/printoon/index.html",
-        "/printoon/main.c3d25bc8d68b61c0.js",
+        "/printoon/main.2c519ec44d74eb5f.js",
         "/printoon/manifest.webmanifest",
         "/printoon/polyfills.aa9af38d7449e9f4.js",
         "/printoon/runtime.197787627a052c86.js",
@@ -52,8 +52,8 @@
     "/printoon/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/printoon/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/printoon/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/printoon/index.html": "971734f1a4cbed74ee6e9b17bdd82e445888a152",
-    "/printoon/main.c3d25bc8d68b61c0.js": "a26008c6a74c7572a83dbdd85aa8102e532b4802",
+    "/printoon/index.html": "fabcfd46965435053f7f159b2b9215d45b941691",
+    "/printoon/main.2c519ec44d74eb5f.js": "3c208905945a820398d2744e540700a231530766",
     "/printoon/manifest.webmanifest": "46dcc4e10b2ac3f9679bda3e06fd00b82a693e51",
     "/printoon/polyfills.aa9af38d7449e9f4.js": "7294881e5a5713c847f58d62cf6c1d78f1077cb2",
     "/printoon/runtime.197787627a052c86.js": "c3ac2117f741528f8ddc05821bb377e62356965c",
