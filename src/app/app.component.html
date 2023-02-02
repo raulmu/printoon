@@ -2,7 +2,7 @@
   <mat-toolbar>
     <span>My Application</span>
     <span class="my-spacer"></span>
-    <button mat-raised-button color="accent" (click)="addToHomeScreen()">Add to home screen</button>
+    <button mat-raised-button color="accent" (click)="addToHomeScreen()" *ngIf="showButton">Add to home screen</button>
   </mat-toolbar>
 </p>
 <router-outlet></router-outlet>
