@@ -1,15 +1,28 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
   deferredPrompt: any;
   showButton = false;
   title = 'printoon';
 
+  ngOnInit(): void {
+    window.addEventListener('beforeinstallprompt', (e: Event) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      this.deferredPrompt = e;
+      this.showButton = true;
+    });
+  }
+
+
+/*
   @HostListener('window:beforeinstallprompt', ['$event'])
   onbeforeinstallprompt(e: Event) {
     console.log(e);
@@ -19,6 +32,7 @@ export class AppComponent {
     this.deferredPrompt = e;
     this.showButton = true;
   }
+  */
 
   addToHomeScreen() {
     console.log('addToHomeScreen');
