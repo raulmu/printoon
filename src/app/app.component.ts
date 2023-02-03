@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { AppUpdateService } from './services/app-update.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,10 @@ export class AppComponent implements OnInit {
   deferredPrompt: any;
   showButton = false;
   title = 'printoon';
+
+  constructor(private _updateService: AppUpdateService) {
+
+  }
 
   ngOnInit(): void {
     /*
