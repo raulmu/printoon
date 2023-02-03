@@ -1,8 +1,13 @@
-<p>
-  <mat-toolbar>
-    <span>My Application</span>
-    <span class="my-spacer"></span>
-    <button mat-raised-button color="accent" (click)="addToHomeScreen()" *ngIf="showButton">Add to home screen</button>
-  </mat-toolbar>
-</p>
+<mat-toolbar color="primary">
+  <span>Printoon</span>
+  <span class="my-spacer"></span>
+  <button
+    mat-icon-button
+    aria-label="icon-button with home icon"
+    (click)="navService.navigateTo('/')"
+  >
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-raised-button color="accent" (click)="addToHomeScreen()" *ngIf="showButton">Add to home screen</button>
+</mat-toolbar>
 <router-outlet></router-outlet>

@@ -66,6 +66,9 @@ MIT
 @angular/service-worker
 MIT
 
+angular-device-information
+MIT
+
 rxjs
 Apache-2.0
                                Apache License

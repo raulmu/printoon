@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { AppUpdateService } from './services/app-update.service';
+import { NavigateService } from './services/navigate.service';
 
 @Component({
   selector: 'app-root',
@@ -12,20 +13,12 @@ export class AppComponent implements OnInit {
   showButton = false;
   title = 'printoon';
 
-  constructor(private _updateService: AppUpdateService) {
+  constructor(private _updateService: AppUpdateService, public navService: NavigateService) {
 
   }
 
   ngOnInit(): void {
-    /*
-    window.addEventListener('beforeinstallprompt', (e: Event) => {
-      console.log({e});
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      this.deferredPrompt = e;
-      this.showButton = true;
-    });*/
+    //
   }
 
 

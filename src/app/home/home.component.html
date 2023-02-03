@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row mat-h1">Categories</div>
+  <div class="image-mosaic">
+    <app-category-element
+      [item]="category"
+      *ngFor="let category of categories"
+    ></app-category-element>
+  </div>
+</div>
